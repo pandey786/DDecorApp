@@ -13,7 +13,7 @@ import FacebookCore
 import GoogleSignIn
 
 class LoginViewController: UIViewController {
-
+    
     @IBOutlet weak var textFieldMobile: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
     @IBOutlet weak var buttonLogin: UIButton!
@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
         self.setUpViews()
         
         //Load Dashboard Explicitly
-        //AppInstances.appDelegate.loadDashboardScreen()
+        AppInstances.appDelegate.loadDashboardScreen()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
         self.buttonLogin.layer.borderWidth = 1.0
         self.buttonLogin.layer.borderColor = UIColor.darkGray.cgColor
     }
-
+    
     // MARK: - FB User Data
     // MARK: -
     func getFBUserData(){
@@ -55,7 +55,7 @@ class LoginViewController: UIViewController {
             })
         }
     }
-
+    
     // MARK: - Actions
     // MARK: -
     @IBAction func buttonLoginTapped(_ sender: Any) {

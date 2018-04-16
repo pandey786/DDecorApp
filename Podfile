@@ -14,6 +14,7 @@ target 'DDecorApp' do
   pod 'AACarousel'
   pod 'Kingfisher', '~> 4.0'
   pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :branch => 'master'
+  pod 'JTMaterialTransition', '~> 2.0'
 
   target 'DDecorAppTests' do
     inherit! :search_paths
